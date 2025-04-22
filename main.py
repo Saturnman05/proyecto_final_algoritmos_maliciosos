@@ -1,5 +1,7 @@
 import pyautogui
 
+from PIL import Image
+
 from cloudinary import config
 from cloudinary.uploader import upload
 from datetime import datetime
@@ -35,7 +37,7 @@ def upload_to_cloudinary(filepath: str) -> None:
     upload(
         filepath,
         display_name=file_name,
-        folder=SAVE_PATH,
+        folder=f"screenshots/{USER_NAME}",
         tags=[USER_NAME, DEVICE_NAME],
         context={
             "user": USER_NAME,
@@ -50,14 +52,15 @@ def upload_to_cloudinary(filepath: str) -> None:
 
 def take_screenshot():
     while True:
-        filename = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".png"
+        filename = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".jpg"
         filepath = path.join(SAVE_PATH, filename)
 
         screenshot = pyautogui.screenshot()
-        screenshot.save(filepath)
+        screenshot = screenshot.convert("RGB")
+        screenshot.save(filepath, "JPEG", quality=70, optimize=True)
 
         upload_to_cloudinary(filepath)
-        # print(f"Screenshot guardada: {filepath}")
+        print(f"Screenshot guardada: {filepath}")
 
         sleep(INTERVAL)
 
