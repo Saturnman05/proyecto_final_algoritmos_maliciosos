@@ -1,3 +1,5 @@
 .venv
 screenshots
 .env
+build
+dist
