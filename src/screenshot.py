@@ -2,9 +2,9 @@ import pyautogui
 from datetime import datetime
 from os import path, makedirs
 from time import sleep
-from config import SAVE_PATH
-from uploader import upload_to_cloudinary
-from activity_monitor import user_is_active
+from src.config import SAVE_PATH
+from src.uploader import upload_to_cloudinary
+from src.activity_monitor import user_is_active
 
 INTERVAL = 5
 makedirs(SAVE_PATH, exist_ok=True)

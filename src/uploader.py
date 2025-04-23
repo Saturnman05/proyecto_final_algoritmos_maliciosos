@@ -2,7 +2,7 @@ from cloudinary import config as cloud_config
 from cloudinary.uploader import upload
 from datetime import datetime
 from os import remove
-from config import SAVE_PATH, USER_NAME, DEVICE_NAME, IP_ADDRESS, OS_NAME
+from src.config import SAVE_PATH, USER_NAME, DEVICE_NAME, IP_ADDRESS, OS_NAME
 
 cloud_config(
     cloud_name="dsnwguzkd",
