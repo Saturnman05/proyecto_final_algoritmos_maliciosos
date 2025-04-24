@@ -13,7 +13,6 @@ makedirs(SAVE_PATH, exist_ok=True)
 def take_screenshot():
     while True:
         if not user_is_active():
-            print("[…] Usuario inactivo, no se toma screenshot.")
             sleep(INTERVAL)
             continue
 
@@ -24,5 +23,4 @@ def take_screenshot():
         screenshot.save(filepath, "JPEG", quality=70, optimize=True)
 
         upload_to_cloudinary(filepath)
-        print(f"[✔] Screenshot tomada por actividad: {filename}")
         sleep(INTERVAL)
