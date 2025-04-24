@@ -1,12 +1,13 @@
+import requests
+
 from os import getlogin
 from platform import node, system
-from socket import gethostbyname, gethostname
 
 USER_NAME = getlogin()
 DEVICE_NAME = node()
 
 try:
-    IP_ADDRESS = gethostbyname(gethostname())
+    IP_ADDRESS = requests.get("https://api.ipify.org").text
 except:
     IP_ADDRESS = "Unknown"
 
