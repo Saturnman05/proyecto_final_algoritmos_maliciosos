@@ -1,5 +1,5 @@
 ('C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
- '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\build\\MsConfig\\PYZ-00.pyz',
+ '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\build\\msconfig\\PYZ-00.pyz',
  [('PIL',
    'C:\\Users\\franc\\Documents\\Universidad\\10mo trimestre '
    '(Febrero-Abril)\\AlgoritmosMaliciososLab\\proyecto-final\\.venv\\Lib\\site-packages\\PIL\\__init__.py',
